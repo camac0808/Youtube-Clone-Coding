@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$mainColor: red;
+$mainPadding: 12px;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* <!--========================================================
+                              HEADER
+    =========================================================--> */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252525;
+  padding: 12px;
+  color: white;
+}
+
+header .icons .fa-magnifying-glass {
+  margin-right: 12px;
+}
+/* <!--========================================================
+                              CONTENT
+    =========================================================--> */
+
+.player {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: #252525;
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/* Video Info */
+
+.info {
+  padding: 12px;
+
+  .hashtags {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    color: blue;
+    li {
+      margin-right: 6px;
+    }
+  }
+
+  .video-title {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .views {
+    font-size: small;
+    color: darkgray;
+  }
+
+  .actions{
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+    margin: 10px 0;
+
+    li button {
+      display: flex;
+      flex-direction: column;
+      font-size: medium;
+      align-items: center;
+
+      span {
+        margin-top: 5px;
+      }
+
+      .active {
+        color: blue;
+      }
+    }
+  }
+  
+  .channel {
+    display: flex; 
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+    .metadata {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 30px;
+        height: 35px;
+        border-radius: 50%;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        
+        .name {
+          font-size: medium;
+        }
+        .subscribers {
+          font-size: small;
+          color: gray;
+        }
+      }
+    }
+
+    .subscribe {
+      color: red;
+      font-size: medium;
+    }
+  }
+}
+
+// Video upNext
+
+.upNext {
+  padding: 0 12px;
+  
+}
+
+.infoAndUpnext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpnext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }  
+}
+
+/* <!--========================================================
+                              FOOTER
+=========================================================--> */

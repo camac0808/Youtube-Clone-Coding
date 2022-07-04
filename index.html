@@ -4,57 +4,134 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/7532f5503c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Write your title</title>
   </head>
   <body>
-    <header>
-      <div class="logo fa-2x">
-        <i class="fa-brands fa-youtube" style="color: crimson"></i>
-        <span class="title">Youtube</span>
-      </div>
-      <nav>
-        <ul class="icons">
-          <li><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-        </ul>
-      </nav>
-    </header>
     <!--========================================================
                               HEADER
     =========================================================-->
-    <main>
-      <section class="player">
-        <video controls src="video/좀비학살2.mp4"></video>
-      </section>
-      <section class="info">
-        <div class="metadata">
-          <ul class="hashtags">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <div class="videoTitle">
-            <span class="title"></span>
-            <button class="downButton"><i class="fa-solid fa-sort-down"></i></button>
-          </div>
-          <div class="views"></div>
-        </div>
-        <div class="action"></div>
-        <div class="channel"></div>
-      </section>
-      <section class="upNext"></section>
-    </main>
+    <header>
+      <div class="logo fa-1x">
+        <i class="fa-brands fa-youtube" style="color: crimson"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+    </header>
+
     <!--========================================================
                               CONTENT
     =========================================================-->
+    <main>
+      <!-- Video Player -->
+      <section class="player">
+        <video controls src="video/좀비학살2.mp4"></video>
+      </section>
+      <!-- Video Info -->
+      <div class="infoAndUpnext">
+        <section class="info">
+          <div class="metadata">
+            <ul class="hashtags">
+              <li>#Coding</li>
+              <li>#Coder</li>
+              <li>#Choi</li>
+            </ul>
+  
+            <div class="video-title">
+              <span class="title">Clone Coding Youtube Mobile Website</span>
+              <button class="downBtn">
+                <i class="fa-solid fa-sort-down"></i>
+              </button>
+            </div>
+            <div class="views">1M views 1 month ago</div>
+          </div>
+  
+          <div class="actions">
+            <li>
+              <button><i class="fas fa-thumbs-up active"></i><span>1K</span></button>
+            </li>
+            <li>
+              <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+            </li>
+            <li>
+              <button><i class="fas fa-share"></i><span>Share</span></button>
+            </li>
+            <li>
+              <button><i class="fas fa-plus"></i><span>Save</span></button>
+            </li>
+            <li>
+              <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+            </li>
+          </div>
+  
+          <div class="channel">
+            <div class="metadata">
+              <img src="image/Choi.jpg" alt="" />
+              <div class="info">
+                <span class="name">코딩 by Choi</span>
+                <span class="subscribers">1M subscribers</span>
+              </div>
+            </div>
+            <button class="subscribe">SUBSCRIBE</button>
+          </div>
+          
+        </section>
+        <!-- Video Upnext -->
+        <section class="upNext">
+          <span class="title">Up next</span>
+          <ul>
+            <li class="item">
+              <img src="" alt="" />
+              <div class="info">
+                <span class="title"></span>
+                <span class="name"></span>
+                <span class="views"></span>
+              </div>
+              <button class="moreBtn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </li>
+            <li class="item">
+              <img src="" alt="" />
+              <div class="info">
+                <span class="title"></span>
+                <span class="name"></span>
+                <span class="views"></span>
+              </div>
+              <button class="moreBtn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </li>
+            <li class="item">
+              <img src="" alt="" />
+              <div class="info">
+                <span class="title"></span>
+                <span class="name"></span>
+                <span class="views"></span>
+              </div>
+              <button class="moreBtn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
     <!--========================================================
                             FOOTER
     =========================================================-->
     <footer></footer>
 
+    <script
+      src="https://kit.fontawesome.com/7532f5503c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
