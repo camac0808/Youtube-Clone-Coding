@@ -63,8 +63,23 @@ header .icons .fa-magnifying-glass {
   margin-right: 6px;
 }
 .info .video-title {
+  display: flex;
+}
+.info .video-title .title {
   font-size: large;
   font-weight: bold;
+}
+.info .video-title .title.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.info .video-title button {
+  transition: transform 0.3s ease-in-out;
+}
+.info .video-title button.rotate {
+  transform: rotate(180deg);
 }
 .info .views {
   font-size: small;
